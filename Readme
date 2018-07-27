@@ -5,8 +5,7 @@ REPOSITORY CONTENTS:
 -> mainpart1.c(test program of reading taskset for the input file)
 -> mainpart2.c(test program of synthetic generating task set by implementing UUniFast algorithm)
 -> test.txt (input file)
-_______________________________________________________________________________________________________________________________________________________________________________________________________
-
+_____________________________________________________________________________________________________________________________
 ABOUT: 
 
 In this code we have programmed scheduling algorithm for Earliest Deadline Fast, Rate Monotic, Deadline Monotonic for task set either given in the input file or by generating synthetic task set by UUnifast algorithm. For each task set we check if they are schedulable in EDF, RM and DM. For EDF we find the total utilization for the task set and if it less than or equal to one we report it. If not we go for loading factor and report the loading factor table for the busy period or till which the work schedulable is less than or equal to one. For RM and DM we find the utilization for each task and compare it with the upper bound. If it is less than or equal to the bound the task is schedulable. If not we for for Real time analysis and find the time for which all task will have the work done before deadline. We report the time at which the time converges or the time where the task misses the deadline. This procedure is done for all tasks in RM and DM.
@@ -17,7 +16,7 @@ We have considered these 4 cases:
 3. Tasks that are scheduling in EDF RM and DM when each task set consists of 25 tasks and deadline is uniformly distributed in range of [Ci,Ti]
 4. Tasks that are scheduling in EDF RM and DM when each task set consists of 25 tasks and deadline is uniformly distributed in range of [Ci + (Ti-Ci)/2,Ti]
 
-______________________________________________________________________________________________________________________________________________________________________________________________________
+____________________________________________________________________________________________________________________________
 
 COMPILATION:
 
@@ -25,12 +24,11 @@ On Host
 
 -> On the host, open directory in terminal in which files are present and compile main file. Type make to compile
 -> Run the excutable files.
-_______________________________________________________________________________________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________
 
 EXECUTION:
 
 ->type ./main to run the code of part1
 -> type ./main1 to run code for part2
-_______________________________________________________________________________________________________________________________________________________________________________________________________
-
+_____________________________________________________________________________________________________________________________
 
